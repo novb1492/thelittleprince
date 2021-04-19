@@ -15,7 +15,7 @@ let pointbundle=2;
 let pointsx,pointsy;
 let pointsw=0;
 let totalpoints=5; 
-//hill objects//g
+//hill objects
 let hills,hillsw=1;
 //cloud objects
 let clouds;
@@ -24,7 +24,7 @@ let cloudsx,cloudsy,cloudssize;
 //skycolor object
 let sky;
 //sun object
-let sun;//git
+let sun;
 //moon objet
 let moon;
 //time function and objects
@@ -72,7 +72,6 @@ var t;
 var position;
 function setup() 
 {
-  ///gittest
   let canvas=createCanvas(displayWidth,windowHeight);
   canvas.parent('canvas');
   ////프레임설정
