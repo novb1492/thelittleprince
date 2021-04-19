@@ -27,7 +27,7 @@ let sky;
 let sun;
 //moon objet
 let moon;
-//time function and objects//hometest
+//time function and objects
 let totalminuit=0,nowminuit=0,starthour,endhour;
 function returntotalminuit(start,end)
 {
