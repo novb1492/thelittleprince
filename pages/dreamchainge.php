@@ -27,7 +27,7 @@ session_start();
         
         <div class="float-left"style="top:10%">
                     꿈의 내용을 변경해 주는 페이지 입니다.
-                    <form action="../dreams/dreamsprocess.php" method="POST">
+                    <form action="../processes/dreamsprocess.php" method="POST">
                     <br>
                     DREAMTITLE
                     <br>
