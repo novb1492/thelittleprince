@@ -15,7 +15,7 @@
     PWD:<input type='password'name='pwd'class='pwd' value="wirte password">
     <br>
     <br>
-    현재 핸드폰번호
+    핸드폰번호
     <br>
     <br>
     <input type='tel' name='phone1'style="width:50px;font-size:16px;"value="010">-
