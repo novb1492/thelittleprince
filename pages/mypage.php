@@ -16,7 +16,7 @@ session_start();
                 echo "<br>가입일: ",$_SESSION['created'],"<br>";               
                 ?>   
                  <br>
-                 <a id="box7"href="http://localhost/thelittleprince/pages/updateinfor.php">회원정보 변경</a>            
+                 <a id="box7"href="updateinfor.php">회원정보 변경</a>            
                  <br>
                  <br>
                  <a id="box6"onclick="fetchpage('./emthy.html','article')">지우기</a>   

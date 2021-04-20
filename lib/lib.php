@@ -8,7 +8,7 @@ function dingdong(text)
 <?php 
 function db()///////////////데이터베이스에 들어갈 암호및 경로
 {
-    return mysqli_connect("localhost","root", "6937544","thelittleprince");
+    return mysqli_connect("localhost","root", "6937544");
 }
 function query($conn,$sql)///////////////sql문 대입하기
 {
@@ -41,7 +41,7 @@ $row = fench($result);//////////////////////변수에 담기
         return $row;
     }
 }
-function check($result)
+function savecheck($result)
 {
     if ($result === false) 
     {
