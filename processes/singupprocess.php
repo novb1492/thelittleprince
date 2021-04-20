@@ -7,17 +7,19 @@ $phone1=$_POST['phone1'];
 $phone2=$_POST['phone2'];
 $phone3=$_POST['phone3'];
 
+$bool=true;
+
 $table='user';
 
 $sql="SELECT email FROM $table WHERE email='$email'";
 
 $conn=mysqlconnect();///////////데이터베이스 접속
 
-$result=inputquery($conn, $sql);//////////sql문 대입하기 ->결과가져오기
+$row=process($sql,"select");
 
-$row=fencharray($result);
+//echo $row['email'];
 
-if($email==$row['email'])
+if(empty($row)==false)///////emthy비어있다면true반환
 {
     $bool=false;
     $failtext="중복된 아이디 입니다.";
@@ -37,9 +39,9 @@ $sql="INSERT INTO $table(email,password,created,phone1,phone2,phone3) VALUES('$e
 
 //mysqli_select_db($conn,"thelittleprince");//////데이터베이스 선택
 
-$result=inputquery($conn, $sql);//////////sql문 대입하기 ->결과가져오기
+$bool=process($sql,"insert");
 
-$bool=savecheck($result);////저장확인
+//echo $bool;
 
 $successtext="회원가입 성공";
 $failtext="회원가입 실패";
