@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../lib/lib2.php");
+require("../lib/calldblib.php");
 
 $email=$_POST['email'];
 $dreamtitle=$_POST['dreamtitle'];
@@ -22,7 +22,6 @@ else if($situation=="update")
     $sql= "UPDATE dreams SET dreamtitle='$dreamtitle',dreamdescription='$dreamdescription',period='$period',dreamcreate=now(),months='$month',days='$day' WHERE email='$email'";
     $situation="update";   
     $successtext="목표변경에 성공";
-   
 }
 else
 {

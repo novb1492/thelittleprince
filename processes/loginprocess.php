@@ -1,6 +1,6 @@
 //loginprocess
 <?php
-require("../lib/lib2.php");
+require("../lib/calldblib.php");
 
     $email=$_POST['email'];
     $pwd=$_POST['pwd'];

@@ -1,5 +1,4 @@
 <?php
-require("../lib/lib.php");
 session_start();
 ?>
 <html>
@@ -12,7 +11,7 @@ session_start();
                 <?php
                 echo "email: ",$_SESSION['email'],"<br>";
                 echo "<br>IDnumber: ",$_SESSION['id'],"<br>";
-                echo "<br>핸드폰번호: ",0,$_SESSION['phone1'],"-",$_SESSION['phone2'],"-",$_SESSION['phone3'];
+                echo "<br>핸드폰번호: ",$_SESSION['phone1'],"-",$_SESSION['phone2'],"-",$_SESSION['phone3'];
                 echo "<br>가입일: ",$_SESSION['created'],"<br>";               
                 ?>   
                  <br>
