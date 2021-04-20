@@ -1,5 +1,6 @@
 <?php
 require("../lib/htmlhead.html");
+require('jslinks.html');
 session_start();
 ?>
 <!DOCTYPE html>
@@ -12,8 +13,6 @@ session_start();
 <body id="fadein">
 
 <div id="canvas2"value="전체캔버스">
-
-   <?php require('jslinks.html');?>
 
     <script src="../p52.js"></script>
     
@@ -32,17 +31,17 @@ session_start();
         비밀번호 변경
         <br>
         <br>
-                    <form action="../processe/updateprocess.php" method="POST">
-                    현재 비밀번호
+                    <form action="../processes/updateprocess.php" method="POST">
+                    현재 비밀번호를 입력해주세요
                     <br>
                     <input type="password"name="cpwd"class='id'value="현재 비밀번호를 적어주세요">
                     <br>
-                    사용하실 비밀번호
+                    새로 사용하실 비밀번호를 입력해주세요
                     <br>
                     <input type="password"name="npwd"class='id'value="새로운 비빌번호를 적어주세요">
                     <br>
                     <br>
-                    <input type="hidden" name="situation"value="updatepwd">
+                    <input type="hidden" name="calum"value="updatepwd">
                     <input type="submit">
                     </form> 
         <br>
@@ -50,12 +49,10 @@ session_start();
         핸드폰 번호 변경
         <br>
         <br>
-                    <form action="../processe/updateprocess.php" method="POST">
+                    <form action="../processes/updateprocess.php" method="POST">
                     현재 핸드폰번호
                     <br>
-                    <input type='tel' name='cphone1'style="width:50px;font-size:16px;"value="<?php echo 0,$_SESSION['phone1']?>">-
-                    <input type='tel' name='cphone2' style="width:60px;font-size:16px;"value="<?php echo $_SESSION['phone2']?>">-
-                    <input type='tel' name='cphone3' style="width:60px;font-size:16px;"value="<?php echo $_SESSION['phone3']?>">
+                    <?php echo 0,$_SESSION['phone1']?>-<?php echo $_SESSION['phone2']?>-<?php echo $_SESSION['phone3']?>
                     <br>
                     새로운 핸드폰번호
                     <br>

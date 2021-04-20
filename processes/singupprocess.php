@@ -7,13 +7,9 @@ $phone1=$_POST['phone1'];
 $phone2=$_POST['phone2'];
 $phone3=$_POST['phone3'];
 
-$bool=true;
-
 $table='user';
 
 $sql="SELECT email FROM $table WHERE email='$email'";
-
-$conn=mysqlconnect();///////////데이터베이스 접속
 
 $row=process($sql,"select");
 
@@ -47,5 +43,6 @@ $successtext="회원가입 성공";
 $failtext="회원가입 실패";
 
 }
-check($bool,$successtext,$failtext);
+$link='../pages/main.php';
+check($bool,$successtext,$failtext,$link);
 ?>
