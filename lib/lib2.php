@@ -49,13 +49,17 @@
         else
         {
             $alerttext=$failtext;
-        }
-      ?> 
-       <script>
+        } 
+       gotourl($alerttext,$link);
+    }
+    function gotourl($alerttext,$link)
+    {
+    ?>
+      <script>
         alert("<?php echo $alerttext?>");
         location.href = "<?php echo $link ?>";
         </script>
-        <?php
+    <?php    
     }
     function sesstionuser($id,$email,$password,$created,$phone1,$phone2,$phone3)
     {
