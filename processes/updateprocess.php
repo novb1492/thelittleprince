@@ -41,7 +41,7 @@ else if($updatecalum=="updatephone")
     $_SESSION['phone2']=$nphone2;
     $_SESSION['phone3']=$nphone3;
     
-    $successtext="비밀번호 변경에 성공하였습니다.";
+    $successtext="전화번호 변경에 성공하였습니다.";
 }
 check($bool,$successtext,$failtext,$link);
 
