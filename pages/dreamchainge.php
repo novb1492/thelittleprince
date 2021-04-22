@@ -1,4 +1,5 @@
 <?php
+require("../lib/bagichtmlheads.html");
 require("../lib/htmlhead.html");
 require('jslinks.html');
 session_start();
@@ -6,9 +7,6 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Compatible" content="no-cache"/>
-    <link href="../css/css.css" rel="stylesheet"  type="text/css"  />
     <script src="../p52.js"></script>
     </head>
 <body id="fadein">

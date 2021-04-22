@@ -1,16 +1,11 @@
 <?php
+require("../lib/bagichtmlheads.html");
 require("../lib/htmlhead.html");
 session_start();
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Compatible" content="no-cache"/>
-    <link href="../css/css.css" rel="stylesheet"  type="text/css"  />
-    <script src="../lib/jslib.js"></script>
-  
-    </head>
+
 <body id="fadein">
     <div id="box" onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
     <?php if(isset($_SESSION['email'])){///로그인시 ?> 

@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Compatible" content="no-cache"/>
-    </head>
 <body>
     <div class="float-left" style="top:20%">
     <div >사용하실 이메일과<br>비밀번호를 입력해주세요</div>
