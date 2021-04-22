@@ -7,9 +7,11 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="../p52.js"></script>
+        <script src="../p52.js"></script>
     </head>
 <body id="fadein">
+
+<div onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
 
 <div id="canvas2"value="전체캔버스">
 
@@ -18,7 +20,7 @@ session_start();
         
         <?php if (isset($_SESSION['email'])){ echo "{$_SESSION['email']}님 환영합니다";?>
         <br>
-        <a id="box2"href="#!mypage"onmouseover="textcolor(this.id);"onclick="fetchpage('mypage.php','article')">마이페이지</a>
+        <a href="#!mypage"onclick="fetchpage('mypage.php','article')">마이페이지</a>
         <br>
         <br>     
         <a href="../processes/logout.php">로그아웃</a>
@@ -69,7 +71,8 @@ session_start();
         <?php
         }
         ?>
-    <div class="float-left"><a id="box4"href="../pages/main.php" ><h1>THE LITTLE PRINCE</h1></a> </div>
+    <div class="float-left"><a href="../pages/main.php" ><h1>THE LITTLE PRINCE</h1></a> </div>
 </div value="전체캠버스">
+</div value="야간모드">
 </body>
 </html>

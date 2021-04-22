@@ -7,11 +7,11 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="../p52.js"></script>
+        <script src="../p52.js"></script>
     </head>
 <body id="fadein">
 
-<div  onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
+<div onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
 
     <div id="canvas2"value="전체캔버스">
 

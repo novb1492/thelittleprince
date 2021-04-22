@@ -7,7 +7,8 @@ session_start();
 <html>
 
 <body id="fadein">
-    <div  onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
+
+<div onmouseover="textcolor();//야간글자모드제일 위에 씌우기">
     
     <?php if(isset($_SESSION['email'])){///로그인시 ?> 
     
@@ -77,6 +78,6 @@ session_start();
     <div  class="float-left"><a href="main.php" ><h1>THE LITTLE PRINCE</h1></a> </div>
     
     </div value="전체 캠버스">
-    </div value="야간 글자모드">
+</div value="야간 글자모드">
 </body>
 </html>
