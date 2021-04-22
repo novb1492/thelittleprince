@@ -1,5 +1,5 @@
 <?php
-require("../lib/bagichtmlheads.html");
+require("../lib/bagichtmlheads.html");////head내용들을 따로 묶어봤다 이렇게해도 head자리가 생기고 들어간다 신기하다 2021-4-22
 require("../lib/htmlhead.html");
 session_start();
 ?>
