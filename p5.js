@@ -154,31 +154,31 @@ function setup()
       }
     }
     position={
-      returnxyz:function(sw,xarray,yarray,zarray,c)
-      {
-      switch (sw) {
-        case 1:
-          xarray[0]=c.returnx();
-          yarray[0]=c.returny();
-          if(zarray!=null)
-          {
-            zarray[0]=c.returnz();
-          }
-            //console.log('starsw1');   
-              break;
-        case 2:
-          xarray[1]=c.returnx();
-          yarray[1]=c.returny();
-          if(zarray!=null)
-          {
-            zarray[1]=c.returnz();
-          }
-          // console.log('starsw2');   
-              break;
-        default:
-          break;
+        returnxyz:function(sw,xarray,yarray,zarray,c)
+        {
+        switch (sw) {
+          case 1:
+            xarray[0]=c.returnx();
+            yarray[0]=c.returny();
+            if(zarray!=null)
+            {
+              zarray[0]=c.returnz();
+            }
+              //console.log('starsw1');   
+                break;
+          case 2:
+            xarray[1]=c.returnx();
+            yarray[1]=c.returny();
+            if(zarray!=null)
+            {
+              zarray[1]=c.returnz();
+            }
+            // console.log('starsw2');   
+                break;
+          default:
+            break;
+        }
       }
-    }
     }
   
 }
