@@ -1,6 +1,6 @@
 <?php
 require("../lib/calldblib.php");
-require("../lib/functions.php");
+
 
 $email=$_POST['email'];
 $pwd=$_POST['pwd'];
@@ -51,4 +51,10 @@ $failtext="회원가입 실패";
 }
 $link='../pages/main.php';
 check($bool,$successtext,$failtext,$link);
+/*
+20210501톰캣 설치하다 테이블이 날아갔다
+process부분들 page 부부분들이 좀 바뀌었다
+id 가 없어졌다
+
+*/
 ?>

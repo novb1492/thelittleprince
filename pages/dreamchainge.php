@@ -45,7 +45,7 @@ session_start();
                         <input type='number'name='period'value="<?php echo $_SESSION['period']?>">
                         <br>
                         <br>
-                        <input type="hidden" name="id"value="<?php echo $_SESSION['id'];?>">
+                        <!--<input type="hidden" name="id"value="<?php echo $_SESSION['id'];?>">-->
                         <input type="hidden" name="email"value="<?php  echo $_SESSION['email'];?>">
                         <input type="hidden" name="situation"value="update">
                         <input type="submit">

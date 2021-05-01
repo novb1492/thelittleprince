@@ -1,4 +1,4 @@
-//loginprocess
+
 <?php
 require("../lib/calldblib.php");
 
@@ -19,7 +19,7 @@ if ($pwd === $sqlpassword)
     // 로그인 성공
     session_start();
     
-    sesstionuser($row['id'],$row['email'],$row['password'],$row['created'],$row['phone1'],$row['phone2'],$row['phone3']);/////세션에 user값들저장
+    sesstionuser($row['email'],$row['password'],$row['created'],$row['phone1'],$row['phone2'],$row['phone3']);/////세션에 user값들저장
 
     $sql="SELECT * FROM dreams WHERE email ='$email'";///dreams테이블내용가져오기
    

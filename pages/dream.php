@@ -69,7 +69,7 @@ session_start();
                         <br>
                         <input type='number'name='period'value="1">
                         <br>
-                        <input type="hidden" name="id"value="<?php echo $_SESSION['id'];?>">
+                        <!--<input type="hidden" name="id"value="<?php echo $_SESSION['id'];?>">-->
                         <input type="hidden" name="email"value="<?php  echo $_SESSION['email'];?>">
                         <input type="hidden" name="situation"value="insert">
                         <br>

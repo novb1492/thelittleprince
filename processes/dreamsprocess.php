@@ -5,15 +5,15 @@ require("../lib/calldblib.php");
 $email=$_POST['email'];
 $dreamtitle=$_POST['dreamtitle'];
 $dreamdescription=$_POST['dreamdescription'];
-$id=$_POST['id'];
+//$id=$_POST['id'];
 $period=$_POST['period'];
 $situation=$_POST['situation'];
 $month=date("n");
 $day=date("j");
-echo $day;
+//echo $day;
 if($situation=="insert")
 {
-    $sql="INSERT INTO dreams(id,period,email,dreamtitle,dreamdescription,dreamcreate,months,days) VALUES('$id','$period','$email','$dreamtitle','$dreamdescription',now(),'$month','$day')";
+    $sql="INSERT INTO dreams(period,email,dreamtitle,dreamdescription,dreamcreate,months,days) VALUES('$period','$email','$dreamtitle','$dreamdescription',now(),'$month','$day')";
     $situation="insert";
     $successtext="목표등록에 성공";
 }

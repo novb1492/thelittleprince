@@ -61,9 +61,9 @@
         </script>
     <?php    
     }
-    function sesstionuser($id,$email,$password,$created,$phone1,$phone2,$phone3)
+    function sesstionuser($email,$password,$created,$phone1,$phone2,$phone3)
     {
-        $_SESSION['id']= $id;
+        //$_SESSION['id']= $id;
         $_SESSION['email'] = $email;
         $_SESSION['password']=$password;
         $_SESSION['created']=$created;
