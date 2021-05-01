@@ -37,13 +37,13 @@ session_start();
                     <br>
                     <br>
                     <?php
-                    echo "꿈의 제목<br><br>",$_SESSION['dreamtitle'],"<br><br>";
+                    echo "다짐의 제목<br><br>",$_SESSION['dreamtitle'],"<br><br>";
             
-                    echo "꿈의 내용<br><br>",$_SESSION['dreamdescription'],"<br><br>";
+                    echo "다짐의 내용<br><br>",$_SESSION['dreamdescription'],"<br><br>";
                 
-                    echo "꿈의 기간<br><br>",$_SESSION['period'],"개월<br><br>";
+                    echo "다짐의 기간<br><br>",$_SESSION['period'],"개월<br><br>";
 
-                    echo "소원을 등록한날<br><br>",$_SESSION['dreamcreate'],"<br><br>";
+                    echo "다짐을 등록한날<br><br>",$_SESSION['dreamcreate'],"<br><br>";
                     ?>    
                 </div value="float-left">    
             
@@ -53,16 +53,16 @@ session_start();
             { 
                 ?>               
                     <div class="float-left" style="top:10%">
-                        <?php echo "{$_SESSION['email']}의 소원을 적어주세요";?>
+                        <?php echo "{$_SESSION['email']}의 다짐을 적어주세요";?>
                         <form action="../processes/dreamsprocess.php" method="POST">
                         <br>
                         DREAMTITLE
                         <br>
-                        <input type="text"name="dreamtitle"rows="2"cols="20"value="소원의 제목을 적어주세요">
+                        <input type="text"name="dreamtitle"rows="2"cols="20"value="다짐의 제목을 적어주세요">
                         <br>
                         <br>
                         꿈의 내용
-                        <br><textarea name="dreamdescription"rows="40"cols="200">소원을 적어주세요</textarea>
+                        <br><textarea name="dreamdescription"rows="40"cols="200">다짐을 적어주세요</textarea>
                         <br>
                         <br>
                         목표개월

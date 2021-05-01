@@ -27,7 +27,7 @@ session_start();
             </div value="float-right">
             
             <div class="float-left"style="top:10%">
-                        꿈의 내용을 변경해 주는 페이지 입니다.
+                        다짐의 내용을 변경해 주는 페이지 입니다.
                         <form action="../processes/dreamsprocess.php" method="POST">
                         <br>
                         DREAMTITLE
@@ -35,7 +35,7 @@ session_start();
                         <input type="text"name="dreamtitle"rows="2"cols="20"value="<?php echo $_SESSION['dreamtitle']?>">
                         <br>
                         <br>
-                        꿈의 내용
+                        다짐의 내용
                         <br>
                         <textarea name="dreamdescription"rows="40"cols="200"><?php echo $_SESSION['dreamdescription']?></textarea>
                         <br>

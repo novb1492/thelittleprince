@@ -14,7 +14,7 @@ session_start();
     
     <script src="../animation/check.js"></script>
     
-    <script>check(<?php echo $_SESSION['months'];?>,<?php echo $_SESSION['days'];?>,<?php echo $_SESSION['period'];?>)//////////소원이 있을시</script> 
+    <script>check(<?php echo $_SESSION['months'];?>,<?php echo $_SESSION['days'];?>,<?php echo $_SESSION['period'];?>)//////////다짐이 있을시</script> 
     
     <?php require('jslinks.html')?>
     
@@ -35,12 +35,12 @@ session_start();
         if(isset($_SESSION['dreamtitle']))
         {     
     ?>
-        <a href="dream.php" ><h2>소원을 확인하러 갑니다</h2></a>
+        <a href="dream.php" ><h2>다짐을 확인하러 갑니다</h2></a>
     <?php
         }else
         {
     ?>
-        <a href="dream.php" ><h2>소원을 작성하러 갑니다</h2></a>
+        <a href="dream.php" ><h2>다짐을 작성하러 갑니다</h2></a>
     <?php
         }//작성하러갑니다닫는거?>
     </div value="float center">
