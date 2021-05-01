@@ -58,10 +58,10 @@ session_start();
             <a href="#!singup"onclick="fetchpage('singup.php','article')">회원가입</a>
             <br>
             <form action="../processes/loginprocess.php" method="POST">
-            Email:<input type="text"name="email"class='id'value="wirte email">
+            Email:<input type="email"name="email"class='id'placeholder="wirte email">
             <br>
             <br>
-            PWD:<input type='password'name='pwd'class='pwd' value="wirte password">
+            PWD:<input type='password'name='pwd'class='pwd' placeholder="wirte password">
             <br>
             <br>
             <input type="submit">
