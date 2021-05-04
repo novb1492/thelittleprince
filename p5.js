@@ -116,7 +116,7 @@ function setup()
   //make stars
   stars=new star(totalstars,starsbundle);
   //make points
-  points= new point(totalpoints);
+  points= new point(totalpoints,pointbundle);
   pointsx[0]=[0,displayWidth/4,displayWidth*2/4,displayWidth*3/4,displayWidth];//초기배열
   if(pointsx[0].length==totalpoints)
   {
