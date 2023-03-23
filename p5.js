@@ -131,7 +131,8 @@ function setup()
   hills= new hill(totalpoints,totalsteps,pointbundle);
   //make sheep
   
-  if(checknumber==true)
+  // if(checknumber==true)
+  if(true)
   { 
     var frames=[],animation=[];
     frames=spritedata.frames;
@@ -222,7 +223,8 @@ function draw()
    pointsw=swsystem(pointsw,pointsx[0],pointsx[1],hillsspeed*2,hillsspeed*2);
    hills.drawhills(pointsx,pointsy);
    //draw sheep
-   if(checknumber==true)
+  //  if(checknumber==true)
+  if(true)
    {
    sheepxyz();
    sheep.draw(sheeppos);
